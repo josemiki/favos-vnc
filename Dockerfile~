@@ -1,8 +1,6 @@
 # This Dockerfile is used to build an headles vnc image based on Ubuntu
 
-#FROM nvidia/cuda:9.0-devel-ubuntu16.04
-
-FROM pytorch/pytorch:0.4-cuda9-cudnn7-devel
+FROM nvidia/cuda:9.0-devel-ubuntu16.04
 
 MAINTAINER Jose Huaman "jmhuamanc@gmail.com"
 ENV REFRESHED_AT 2018-10-29
@@ -53,6 +51,7 @@ RUN $INST_SCRIPTS/no_vnc.sh
 ### Install firefox and chrome browser
 RUN $INST_SCRIPTS/firefox.sh
 RUN $INST_SCRIPTS/chrome.sh
+
 
 ### Install xfce UI
 RUN $INST_SCRIPTS/xfce_ui.sh
