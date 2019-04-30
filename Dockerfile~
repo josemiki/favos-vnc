@@ -3,7 +3,7 @@
 FROM nvidia/cuda:9.0-devel-ubuntu16.04
 
 MAINTAINER Jose Huaman "jmhuamanc@gmail.com"
-ENV REFRESHED_AT 2018-10-29
+ENV REFRESHED_AT 2019-04-30
 
 LABEL io.k8s.description="Headless VNC Container with Xfce window manager, firefox and chromium" \
       io.k8s.display-name="Headless VNC Container based on Ubuntu" \

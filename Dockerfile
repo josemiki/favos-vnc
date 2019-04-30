@@ -53,7 +53,7 @@ RUN $INST_SCRIPTS/firefox.sh
 RUN $INST_SCRIPTS/chrome.sh
 
 ### Install opencv 3.1.0
-RUN $INST_SCRIPTS/opencv.sh
+#RUN $INST_SCRIPTS/opencv.sh
 
 ### Install caffe
 #RUN $INST_SCRIPTS/caffe.sh
