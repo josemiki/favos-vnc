@@ -5,7 +5,7 @@ set -e
 echo "Install OpenCV"
 apt-get update 
 apt-get -y install nano
-apt-get update && apt-get upgrade
+apt-get update && apt-get -y upgrade
 apt-get -y install build-essential cmake pkg-config
 apt-get -y install libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev
 apt-get -y install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev

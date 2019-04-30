@@ -4,15 +4,15 @@ set -e
 
 echo "Install OpenCV"
 apt-get update 
-apt-get install nano
+apt-get -y install nano
 apt-get update && apt-get upgrade
-apt-get install build-essential cmake pkg-config
-apt-get install libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev
-apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
-apt-get install libxvidcore-dev libx264-dev
-apt-get install libgtk-3-dev
-apt-get install libatlas-base-dev gfortran
-apt-get install python2.7-dev python3.5-dev
+apt-get -y install build-essential cmake pkg-config
+apt-get -y install libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev
+apt-get -y install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+apt-get -y install libxvidcore-dev libx264-dev
+apt-get -y install libgtk-3-dev
+apt-get -y install libatlas-base-dev gfortran
+apt-get -y install python2.7-dev python3.5-dev
 cd ~
 wget https://bootstrap.pypa.io/get-pip.py
 python get-pip.py
@@ -31,7 +31,7 @@ source ~/.bashrc
 mkvirtualenv cv -p python2
 workon cv
 pip install numpy
-apt-get install unzip
+apt-get -y install unzip
 cd ~
 wget -O opencv.zip https://github.com/Itseez/opencv/archive/3.1.0.zip
 unzip opencv.zip

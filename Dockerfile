@@ -3,7 +3,7 @@
 FROM nvidia/cuda:9.0-devel-ubuntu16.04
 
 MAINTAINER Jose Huaman "jmhuamanc@gmail.com"
-ENV REFRESHED_AT 2018-10-29
+ENV REFRESHED_AT 2019-04-30
 
 LABEL io.k8s.description="Headless VNC Container with Xfce window manager, firefox and chromium" \
       io.k8s.display-name="Headless VNC Container based on Ubuntu" \
@@ -55,6 +55,8 @@ RUN $INST_SCRIPTS/chrome.sh
 ### Install opencv 3.1.0
 RUN $INST_SCRIPTS/opencv.sh
 
+### Install caffe
+#RUN $INST_SCRIPTS/caffe.sh
 
 ### Install xfce UI
 RUN $INST_SCRIPTS/xfce_ui.sh
